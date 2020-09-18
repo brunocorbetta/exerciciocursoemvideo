@@ -1,0 +1,8 @@
+number = str(input('Digite um numero de 4 digitos: '))
+print('Analisando {}....'.format(number))
+number.split(" ")
+print(number)
+print('Tem {} Milhar'.format(number[0]))
+print('Tem {} Centenas'.format(number[1]))
+print('Tem {} Dezenas'.format(number[2]))
+print('Tem {} Unidades'.format(number[3]))
