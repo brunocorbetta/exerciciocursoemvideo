@@ -1,12 +1,24 @@
-def transposta(m):
-    nlinhas = (len(m))
-    ncolunas = len(m[0])
-    mt = []
+class S:
+    def __init__(self):
+        self.v = []
+        self.i = -1
 
-    for i in range(0,nlinhas):
-        for j in range(0,ncolunas):
-            mt[j][i] = m[i][j]
-        return mt
+    def push(self, x):
+        self.i += 1
+        self.v.insert(0, x)
 
-m = [[1,2,3],[4,5,6],[7,8,9]]
-transposta(m)
+    def pop(self):
+        if (not self.empty()):
+            self.i -= 1
+            return self.v.pop()
+
+    def empty(self):
+        return self.i < 0
+
+
+s = S()
+for i in range(10):
+    s.push(i)
+
+while not s.empty():
+    print(s.pop()) 

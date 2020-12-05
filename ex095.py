@@ -12,7 +12,7 @@ while True:
     jogador['total'] = sum(partidas)
     time.append(jogador.copy())
     while True:
-        resp = str(input("Quer continuar? [S/N"))
+        resp = str(input("Quer continuar? [S/N]"))
         if resp in 'SN':
             break
         print('Erro! responda apenas S ou N. ')
