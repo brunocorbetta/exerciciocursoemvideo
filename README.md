@@ -1,2 +1,3 @@
 # exerciciocursoemvideo
- exxercicio do curso em video de python
+ Exercicio do curso em video do guanabara.
+ Foi muito bom para treinar a logica.
